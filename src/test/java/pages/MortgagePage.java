@@ -9,9 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MortgagePage {
     private SelenideElement forPrivateIndividuals = $(byAttribute("data-test-id", "test-retail")),
-                            clickmortgageTab= $(byAttribute("data-test-id", "link-mortgage"));
-
-
+            clickmortgageTab = $(byAttribute("data-test-id", "link-mortgage"));
 
 
     public MortgagePage openPage() {
