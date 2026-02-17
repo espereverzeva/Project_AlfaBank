@@ -12,18 +12,19 @@
 
 ## :computer: Используемый стек
 
-<p align="center">  
-<a href="https://www.jetbrains.com/idea/"><img src="images/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
-<a href="https://www.java.com/"><img src="images/logo/Java.svg" width="50" height="50"  alt="Java"/></a>  
-<a href="https://github.com/"><img src="images/logo/Github.svg" width="50" height="50"  alt="Github"/></a>  
-<a href="https://junit.org/junit5/"><img src="images/logo/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a>  
-<a href="https://gradle.org/"><img src="images/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  
-<a href="https://selenide.org/"><img src="images/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
-<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a> 
-<a href="https://qameta.io/"><img src="images/logo/Allure2.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
-<a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
-<a href="https://www.atlassian.com/ru/software/jira/"><img src="images/logo/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="6%" title="Java" src="images/logo/Java.svg">
+<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
+<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
+<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
+<img width="5%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
 Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
