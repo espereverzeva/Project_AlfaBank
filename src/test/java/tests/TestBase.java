@@ -1,15 +1,66 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import data.TestData;
+import helpers.Attach;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.*;
+
+import java.util.Map;
+
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
+    MortgagePage mortragePage = new MortgagePage();
+    BusinessPage businessPage = new BusinessPage();
+    BlogPage blogPage = new BlogPage();
+    SearchPage searchPage = new SearchPage();
+    FeedbackPage feedbackPage = new FeedbackPage();
 
-        @BeforeAll
-        static void setupSelenideConfig() {
-            Configuration.browserSize = "1920x1080";
-            Configuration.baseUrl = "https://alfabank.ru";
-            Configuration.pageLoadStrategy = "eager";
-            Configuration.timeout = 5000; // default 4000
-        }
+    TestData testData = new TestData();
+
+    @BeforeEach
+    void addListener() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+    }
+
+    @BeforeAll
+    static void setupSelenideConfig() {
+        String baseUrl = System.getProperty("baseUrl", "https://alfabank.ru");
+        String browser = System.getProperty("browser", "chrome");
+        String browserVersion = System.getProperty("browserVersion");
+        String browserSize = System.getProperty("browserSize", "1920x1080");
+        String remoteUrl = System.getProperty("remoteUrl");
+
+        Configuration.baseUrl = baseUrl;
+        Configuration.browser = browser;
+        Configuration.browserVersion = browserVersion;
+        Configuration.browserSize = browserSize;
+        //Configuration.pageLoadStrategy = "eager";
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
+        Configuration.browserCapabilities = capabilities;
+        Configuration.remote = remoteUrl;
+        Configuration.timeout = 5000; // default 4000
+    }
+
+    @AfterEach
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
+//        Attach.attachAsText("Some file", "Some content");
+        closeWebDriver();
+    }
 }
+
