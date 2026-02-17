@@ -64,7 +64,7 @@ test
 
 ## <img src="images/logo/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins
 <p align="center">
-<img title="Jenkins Build" src="images/screens/JenkinsBuild.png">
+<img title="Jenkins Build" src="images/screen/JenkinsBuild.png">
 </p>
 
 ## <img src="images/logo/Allure_Report.svg" title="Allure Report" width="5%"/> Allure [Report](https://jenkins.autotests.cloud/job/kperevereva_properties_alfatests/4/allure/)
