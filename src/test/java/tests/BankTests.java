@@ -1,5 +1,6 @@
 package tests;
 
+import data.TestData;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
@@ -10,6 +11,8 @@ public class BankTests extends TestBase {
     BlogPage blogPage = new BlogPage();
     CreditPage creditPage = new CreditPage();
     FeedbackPage feedbackPage = new FeedbackPage();
+
+    TestData testData = new TestData();
 
     @Test
     void mortgageForSecondaryHousing() {
@@ -39,8 +42,8 @@ public class BankTests extends TestBase {
     void searchInfoCredit() {
         mortragePage.openPage();
         creditPage.clickSearch()
-                .setSearch("кредит")
-                .checktSearch("кредит");
+                .setSearch(testData.searchValue)
+                .checktSearch(testData.searchValue);
     }
 
     @Test
