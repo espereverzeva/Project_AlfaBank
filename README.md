@@ -27,9 +27,12 @@
 <img width="5%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
-Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
-При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
-Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code> и <code>Jira</code>.
+- В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для автоматизации тестирования веб‑приложений [Selenide](https://selenide.org/).
+- В качестве сборщика был использован - <code>Gradle</code>.
+- В качестве фреймворка модульного тестирования задействован <code>JUnit 5</code>.
+- При прогоне тестов браузер запускается в [Selenoid](https://aerokube.com/selenoid/).
+- Для удаленного запуска реализована джоба в **Jenkins** с формированием Allure-отчета и отправкой результатов в **Telegram** при помощи бота.
+- Осуществлена интеграция с **Allure TestOps** и **Jira**
 
 ### Локальный запуск тестов из терминала
 
@@ -58,3 +61,73 @@ test
 - <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
 - <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение.
 - <code>REMOTE_BROWSER_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
+
+## <img src="images/logo/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins
+<p align="center">
+<img title="Jenkins Build" src="images/screens/JenkinsBuild.png">
+</p>
+
+## <img src="images/logo/Allure_Report.svg" title="Allure Report" width="5%"/> Allure [Report](https://jenkins.autotests.cloud/job/kperevereva_properties_alfatests/4/allure/)
+
+Содержание Allure-отчета:
+
+- Шаги теста;
+- Скриншот страницы на последнем шаге;
+- Page Source;
+- Логи браузерной консоли;
+- Видео выполнения автотеста.
+
+### Overview
+
+<p align="center">
+<img title="Allure Overview" src="images/screen/Allure_0.png">
+</p>
+
+### Результат выполнения теста / Тест-кейсы
+
+<p align="center">
+<img title="Test Results in Allure" src="images/screen/Allure_1.png">
+</p>
+
+## <img src="images/logo/AllureTestOps.svg" title="Allure TestOps" width="5%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/5136/dashboards)
+
+Результаты выполнения автотестов в сборке <code>Jenkins</code> передаются в <code>Allure TestOps</code>
+
+На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов.
+
+### Dashboard
+<p align="center">
+<img title="Allure TestOps DashBoard" src="images/screen/allureTestOpsDashBoard.png">
+</p>
+
+### Результат выполнения автотеста
+<p align="center">
+<img title="Allure TestOps Tests" src="images/screen/allureTestOpsTest.png">
+</p>
+
+## <img src="images/logo/Jira.svg" title="Allure TestOps" width="6%"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1584)
+
+Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
+
+<p align="center">
+<img title="Jira Task" src="images/screen/jira_0.png">
+</p>
+
+<p align="center">
+<img title="Jira Task" src="images/screen/jira_1.png">
+</p>
+
+## <img src="images/logo/Telegram.svg" title="Allure TestOps" width="7%"/> Уведомления в Telegram
+
+После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом пройденных тестов.
+
+<p align="center">
+<img width="70%" title="Telegram Notifications" src="images/screen/Telegram.png">
+</p>
+
+## <img src="images/logo/Selenoid.svg" title="Allure TestOps" width="5%"/> Видео примера запуска тестов в Selenoid
+
+К каждому тесту в отчете прилагается видео прогона.
+<p align="center">
+  <img title="Selenoid Video" src="images/video/Video_MD.gif">
+</p>
