@@ -129,5 +129,5 @@ test
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-<img title="Selenoid Video" src="images/video/Video_MD.gif" width="650" height="350"  alt="video">
+<img title="Selenoid Video" src="images/video/Video_MD.mp4" width="650" height="350"  alt="video">
 </p>
