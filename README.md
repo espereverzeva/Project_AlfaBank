@@ -1,5 +1,7 @@
-# Проект по автоматизации тестирования для компании [<img width="20%" title="IntelliJ IDEA" src="images/logo/alfa.svg">](https://alfabank.ru/)
-
+# Проект по автоматизации тестирования для компании [Альфа Банк](https://alfabank.ru/)
+<p align="center">
+<img width="40%" title="IntelliJ IDEA" src="images/logo/alfa.svg">
+</p>
 :scroll: Содержание:
 
 - [Используемый стек](#computer-используемый-стек)
