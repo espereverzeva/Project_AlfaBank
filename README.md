@@ -26,7 +26,7 @@
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"></a>
 <a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg"></a>
 <a href="https://web.telegram.org/"><img width="6%" title="Telegram" src="images/logo/Telegram.svg"></a>
-<a href="https://qameta.io/">"><img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg"></a>
+<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg"></a>
 <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="images/logo/Jira.svg"></a>
 </p>
 
