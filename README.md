@@ -1,6 +1,6 @@
 # Проект по автоматизации тестирования для компании [Альфа Банк](https://alfabank.ru/)
 <p align="center">
-<img width="40%" title="IntelliJ IDEA" src="images/logo/alfa.svg">
+<a href="https://alfabank.ru/"><img width="40%" title="IntelliJ IDEA" src="images/logo/alfa.svg"></a>
 </p>
 :scroll: Содержание:
 
@@ -17,17 +17,17 @@
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg"></a>
-<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="6%" title="Java" src="images/logo/Java.svg">
-<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
-<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
-<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
-<img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
-<img width="5%" title="Jira" src="images/logo/Jira.svg">
+<a href="https://github.com/"><img width="6%" title="GitHub" src="images/logo/GitHub.svg"></a>
+<a href="https://www.java.com/"><img width="6%" title="Java" src="images/logo/Java.svg"></a>
+<a href="https://selenide.org/"><img width="6%" title="Selenide" src="images/logo/Selenide.svg"></a>
+<a href="https://gradle.org/"><img width="6%" title="Gradle" src="images/logo/Gradle.svg"></a>
+<a href="https://junit.org/junit5/"><img width="6%" title="JUnit5" src="images/logo/JUnit5.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="images/logo/Selenoid.svg"></a>
+<a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="images/logo/Jenkins.svg"></a>
+<a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg"></a>
+<a href="https://web.telegram.org/"><img width="6%" title="Telegram" src="images/logo/Telegram.svg"></a>
+<a href="https://qameta.io/">"><img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="images/logo/Jira.svg"></a>
 </p>
 
 - В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для автоматизации тестирования веб‑приложений [Selenide](https://selenide.org/).
