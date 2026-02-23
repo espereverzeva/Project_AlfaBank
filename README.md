@@ -10,8 +10,8 @@
 - [Allure Report](#-allure-report)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
 - [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
+- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+- [Видео примера запуска теста в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
 ## :computer: Используемый стек
 
@@ -129,7 +129,7 @@ test
 <img width="70%" title="Telegram Notifications" src="images/screen/Telegram.png">
 </p>
 
-## <img src="images/logo/Selenoid.svg" title="Selenoid" width="5%"/> Видео примера запуска тестов в Selenoid
+## <img src="images/logo/Selenoid.svg" title="Selenoid" width="5%"/> Видео примера запуска теста в Selenoid
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
