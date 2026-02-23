@@ -16,7 +16,7 @@
 ## :computer: Используемый стек
 
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+[<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">](https://www.jetbrains.com/ru-ru/idea/)
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Java" src="images/logo/Java.svg">
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
