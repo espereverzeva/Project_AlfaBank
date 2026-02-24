@@ -31,17 +31,17 @@ public class TestBase {
 
     @BeforeAll
     static void setupSelenideConfig() {
-        String baseUrl = System.getProperty("baseUrl", "https://alfabank.ru");
-        String browser = System.getProperty("browser", "chrome");
-        String browserVersion = System.getProperty("browserVersion");
-        String browserSize = System.getProperty("browserSize", "1920x1080");
-        String remoteUrl = System.getProperty("remoteUrl");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://alfabank.ru");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browserVersion");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        //String remoteUrl = System.getProperty("remoteUrl");
+        Configuration.remote = System.getProperty("remoteUrl");
 
-        Configuration.baseUrl = baseUrl;
-        Configuration.browser = browser;
-        Configuration.browserVersion = browserVersion;
-        Configuration.browserSize = browserSize;
-        //Configuration.pageLoadStrategy = "eager";
+        //Configuration.baseUrl = baseUrl;
+        //Configuration.browser = browser;
+        //Configuration.browserVersion = browserVersion;
+       // Configuration.browserSize = browserSize;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -49,8 +49,8 @@ public class TestBase {
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = remoteUrl;
-        Configuration.timeout = 5000; // default 4000
+        //Configuration.remote = remoteUrl;
+        Configuration.timeout = 5000;
     }
 
     @AfterEach
