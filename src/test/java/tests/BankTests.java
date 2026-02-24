@@ -1,11 +1,20 @@
 package tests;
 
+import data.TestData;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
 @DisplayName("Тесты для сайта Альфа-Банка")
 public class BankTests extends TestBase {
+
+    MortgagePage mortragePage = new MortgagePage();
+    BusinessPage businessPage = new BusinessPage();
+    BlogPage blogPage = new BlogPage();
+    SearchPage searchPage = new SearchPage();
+    FeedbackPage feedbackPage = new FeedbackPage();
+
+    TestData testData = new TestData();
 
     @DisplayName("Проверка на наличие ипотечной программы на вторичное жилье")
     @Test

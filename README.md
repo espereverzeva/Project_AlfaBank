@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования для компании [Альфа Банк](https://alfabank.ru/)
+# Проект по автоматизации тестирования для компании [Альфа-Банк](https://alfabank.ru/)
 <p align="center">
 <a href="https://alfabank.ru/"><img width="40%" title="IntelliJ IDEA" src="images/logo/alfa.svg"></a>
 </p>
