@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byAttribute;
 import static com.codeborne.selenide.Selenide.$;
 
 public class SearchPage {
-    private SelenideElement searchField = $(".v5qQXQ"),
+    private SelenideElement searchField = $(byAttribute("data-test-id", "test-ya-button")),
             searchInput = $(byAttribute("data-test-id", "search-input")),
             resultSearch = $(".fdJZg3");
 
@@ -18,6 +18,7 @@ public class SearchPage {
         searchField.click();
         return this;
     }
+
     @Step("В поисковое поле ввести \"{value}\"")
     public SearchPage setSearch(String value) {
         searchInput.val(value).pressEnter();

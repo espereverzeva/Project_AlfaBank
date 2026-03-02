@@ -14,6 +14,7 @@ public class BlogPage {
         $(byText(value)).scrollTo().click();
         return this;
     }
+
     @Step("Убедиться в успешном переходе на страницу с блогом, найдя запись \"Полезные статьи от Альфа-Банка\"")
     public BlogPage visibleBlogTab(String value) {
         $(withText(value)).shouldBe(visible);
